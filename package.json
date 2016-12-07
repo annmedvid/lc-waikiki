@@ -13,6 +13,9 @@
     "devDependencies":
     {
         "brunch": "brunch/brunch",
-        "postcss-brunch": "shvaikalesh/postcss-brunch"
+        "postcss-brunch": "shvaikalesh/postcss-brunch",
+        "autoprefixer": "^6.5.3",
+        "postcss-nested": "^1.0.0",
+        "postcss-short-spacing": "^1.0.0"
     }
 }
