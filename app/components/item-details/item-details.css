@@ -50,6 +50,50 @@
         {
             flex: 1 0 auto;
         }
+
+        .item-name
+        {
+            margin-top: 40px;
+            margin-left: 50px;
+            color: var(--shark);
+            font-size: 34px;
+        }
+
+        .item-code
+        {
+            margin-left: 50px;
+            color: var(--gray-chateau);
+            font-size: 14px;
+        }
+
+        .item-price
+        {
+            margin: 35px * 55px 50px;
+            color: var(--chambray);
+            font-size: 22px;
+        }
+
+        .item-size, .item-color
+        {
+            margin-bottom: 10px;
+            margin-left: 50px;
+            color: var(--shark);
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .item-size
+        {
+            display: inline-block;
+            padding-right: 10px;
+        }
+
+        .size-details
+        {
+            text-decoration: none;
+            color: var(--chambray);
+            font-size: 12px;
+        }
     }
 
     .item-image
