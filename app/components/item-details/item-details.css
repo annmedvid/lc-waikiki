@@ -6,5 +6,19 @@
 
 .item-details
 {
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    font-family: var(--gothampromed);
 
+    *
+    {
+        box-sizing: border-box;
+    }
+
+}
+
+.item-details::backdrop
+{
+    background: var(--mercury);
 }
