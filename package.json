@@ -14,8 +14,11 @@
     {
         "brunch": "brunch/brunch",
         "postcss-brunch": "shvaikalesh/postcss-brunch",
+        "postcss-import": "^9.0.0",
         "autoprefixer": "^6.5.3",
         "postcss-nested": "^1.0.0",
-        "postcss-short-spacing": "^1.0.0"
+        "postcss-short-spacing": "^1.0.0",
+        "postcss-custom-properties": "^5.0.1",
+        "postcss-inline-svg": "^2.3.0"
     }
 }
