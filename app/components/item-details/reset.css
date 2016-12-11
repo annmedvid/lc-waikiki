@@ -1,0 +1,15 @@
+button, input, figure
+{
+    all: unset;
+}
+
+h1, h2, h3
+{
+    margin: 0;
+}
+
+dialog
+{
+    padding: 0;
+    border: 0;
+}
