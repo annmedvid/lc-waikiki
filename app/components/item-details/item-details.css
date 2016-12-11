@@ -176,6 +176,14 @@
                 background-position: center;
             }
         }
+
+        .item-description
+        {
+            margin: 40px * 41px 50px;
+            color: var(--abbey);
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 
     .item-image
