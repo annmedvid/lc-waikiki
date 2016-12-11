@@ -16,6 +16,13 @@
         box-sizing: border-box;
     }
 
+    .item-info
+    {
+        min-width: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
     .item-image
     {
         width: 450px;
