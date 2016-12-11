@@ -21,6 +21,16 @@
         min-width: 550px;
         display: flex;
         flex-direction: column;
+
+        .category
+        {
+            flex: 0 0 auto;
+        }
+
+        .main-info
+        {
+            flex: 1 0 auto;
+        }
     }
 
     .item-image
