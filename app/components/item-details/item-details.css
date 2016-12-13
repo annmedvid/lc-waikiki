@@ -112,16 +112,15 @@
                 flex: 1;
             }
 
-            .size::after
+            .size .size-box
             {
-                content: attr(value);
                 width: 100%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                box-sizing: padding-box;
                 margin-left: -2px;
+                box-sizing: initial;
                 border-right: 2px solid var(--mercury);
                 color: var(--shark);
                 font-size: 14px;
@@ -129,12 +128,12 @@
                 cursor: pointer;
             }
 
-            .size:last-of-type::after
+            .size:last-of-type .size-box
             {
                 border-right: 0;
             }
 
-            .size:checked::after
+            .size input[type=radio]:checked + .size-box
             {
                 margin-top: -2px;
                 color: var(--chambray);
