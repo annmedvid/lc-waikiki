@@ -121,16 +121,15 @@
                 align-items: center;
                 margin-left: -2px;
                 box-sizing: initial;
-                border-right: 2px solid var(--mercury);
                 color: var(--shark);
                 font-size: 14px;
                 text-transform: uppercase;
                 cursor: pointer;
             }
 
-            &:last-of-type .size-box
+            &:not(:last-of-type) .size-box
             {
-                border-right: 0;
+                border-right: 1px solid var(--mercury);
             }
 
             input[type=radio]:checked + .size-box
