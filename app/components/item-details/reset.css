@@ -1,6 +1,11 @@
-button, input, figure
+button, figure
 {
     all: unset;
+}
+
+input
+{
+    display: none;
 }
 
 h1, h2, h3
