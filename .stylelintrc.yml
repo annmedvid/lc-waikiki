@@ -87,7 +87,6 @@ rules:
   max-line-length: 80
   max-nesting-depth: 3
   no-browser-hacks: true
-  no-descending-specificity: true
   no-duplicate-selectors: true
   no-empty-source: true
   no-eol-whitespace: true
