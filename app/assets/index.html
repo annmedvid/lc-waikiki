@@ -8,46 +8,43 @@
 <link rel=stylesheet href=style.css>
 
 <dialog class=item-details>
-    <div class=item-info>
-        <header class=category>
-            <h1 class=item-category>Activewear</h1>
-            <button class=close title="close details"></button>
-        </header>
-        <main class=main-info>
-            <h2 class=item-name>Pink Sweatshirt</h2>
-            <data class=item-code value=6K2882Z4>Product Code: 6K2882Z4 - 51S - D.Ocre</data>
+    <header class=category>
+        <h1 class=item-category>Activewear</h1>
+        <button class=close title="close details"></button>
+    </header>
 
-            <p class=item-price>$7,95</p>
+    <h2 class=item-name>Pink Sweatshirt</h2>
+    <data class=item-code value=6K2882Z4>Product Code: 6K2882Z4 - 51S - D.Ocre</data>
 
-            <form action="" method=post>
-                <h3 class=item-size>size</h3>
-                <a href=# class=size-details>Learn more</a>
-                <div class=select-size>
-	                <label class=size><input type=radio name=size value=xs><span class=size-box>xs</span></label>
-	                <label class=size><input type=radio name=size value=s><span class=size-box>s</span></label>
-	                <label class=size><input type=radio name=size value=m checked><span class=size-box>m</span></label>
-	                <label class=size><input type=radio name=size value=l><span class=size-box>l</span></label>
-	                <label class=size><input type=radio name=size value=xl><span class=size-box>xl</span></label>
-	                <label class=size><input type=radio name=size value=xxl><span class=size-box>xxl</span></label>
-                </div>
+    <p class=item-price>$7,95</p>
 
-                <h3 class=item-color>color</h3>
-                <div class=select-color>
-                    <label class=color><input type=radio name=color value=D.Ocre checked><span class=color-box></span></label>
-                    <label class=color><input type=radio name=color value=D.Grey><span class=color-box></span></label>
-                </div>
+    <form action="" method=post id=size>
+        <h3 class=item-size>size</h3>
+        <a href=# class=size-details>Learn more</a>
+        <div class=select-size>
+            <label class=size><input type=radio name=size value=xs><span class=size-box>xs</span></label>
+            <label class=size><input type=radio name=size value=s><span class=size-box>s</span></label>
+            <label class=size><input type=radio name=size value=m checked><span class=size-box>m</span></label>
+            <label class=size><input type=radio name=size value=l><span class=size-box>l</span></label>
+            <label class=size><input type=radio name=size value=xl><span class=size-box>xl</span></label>
+            <label class=size><input type=radio name=size value=xxl><span class=size-box>xxl</span></label>
+        </div>
 
-                <p class=item-description>Main Fabric: %91 Polyester %9 Polyamide. Lining: %100 Polyester<br>
-                Length: Midi</p>
+        <h3 class=item-color>color</h3>
+        <div class=select-color>
+            <label class=color><input type=radio name=color value=D.Ocre checked><span class=color-box></span></label>
+            <label class=color><input type=radio name=color value=D.Grey><span class=color-box></span></label>
+        </div>
 
-                <button class=add-bag title="add to bag">add to bag</button>
-            </form>
-        </main>
-    </div>
+        <p class=item-description>Main Fabric: %91 Polyester %9 Polyamide. Lining: %100 Polyester<br>Length: Midi</p> 
+    </form>
+
+    <input type=submit form=size value="add to bag" class=add-bag>
+
     <figure class=item-image aria-label="it's image">
         <img class=image-main src="images/preview_photo.png" alt="pink sweatshirt full-view">
         <div class=image-small></div>
-    </figure>
+    </figure>   
 </dialog>
 
 <script>
