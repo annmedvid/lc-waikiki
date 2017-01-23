@@ -3,9 +3,15 @@ button, figure
     all: unset;
 }
 
-input
+input[type=radio]
 {
     display: none;
+}
+
+input[type=submit]
+{
+    border: none;
+    padding: 0;
 }
 
 h1, h2, h3
