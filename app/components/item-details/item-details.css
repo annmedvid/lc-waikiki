@@ -14,6 +14,13 @@
     justify-content: space-between;
     font-family: var(--gothampromed);
 
+    @media screen and (max-width: 320px)
+    {
+        width: 320px;
+        height: 900px;
+        flex-wrap: nowrap;
+    }
+
     *
     {
         box-sizing: border-box;
@@ -26,8 +33,11 @@
 {
     margin-left: 50px;
 
+    @media screen and (max-width: 320px)
     {
+        margin-left: 20px;
     }
+}
 
 .category
 {
@@ -37,7 +47,9 @@
     justify-content: space-between;
     border-bottom: 1px solid var(--mercury);
 
+    @media screen and (max-width: 320px)
     {
+        width: 320px;
     }
 
     .item-category
@@ -78,7 +90,10 @@
     color: var(--chambray);
     font-size: 22px;
     line-height: 21px;
+
+    @media screen and (max-width: 320px)
     {
+        margin-bottom: 40px;
     }
 }
 
@@ -95,9 +110,10 @@
 {
     display: inline-block;
     padding-right: 5px;
+
+    @media screen and (max-width: 320px)
     {
-        display: inline-block;
-        padding-right: 5px;
+        margin-bottom: 25px;
     }
 }
 
@@ -117,7 +133,11 @@
     margin-bottom: 40px;
     border: 1px solid var(--mercury);
 
+    @media screen and (max-width: 320px)
     {
+        width: 270px;
+        height: 34px;
+        margin-bottom: 50px;
     }
 
     .size
@@ -151,10 +171,13 @@
             color: var(--chambray);
             border: 2px solid var(--chambray);
 
+            @media screen and (max-width: 320px)
             {
+                height: 30px;
             }
         }
     }
+}
 
 .select-color
 {
@@ -201,8 +224,13 @@
     font-family: var(--soursesanproreg);
     font-size: 14px;
     line-height: 22px;
+
+    @media screen and (max-width: 320px)
     {
+        width: 270px;
+        margin-bottom: 35px;
     }
+}
 
 .add-bag
 {
@@ -215,7 +243,10 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+
+    @media screen and (max-width: 320px)
     {
+        order: 1;
     }
 }
 
@@ -225,10 +256,23 @@
     max-height: 600px;
     position: relative;
 
+    @media screen and (max-width: 320px)
+    {
+        margin-left: 20px;
+        margin-right: 25px;
+        margin-bottom: 30px;
+    }
+
     .image-main
     {
         width: 100%;
         height: 100%;
+
+        @media screen and (max-width: 320px)
+        {
+            width: 196px;
+            height: 261px;
+        }
     }
 
     .image-small
@@ -242,6 +286,13 @@
         background-size: 100%;
         background-position: center center;
         border-bottom: 2px solid var(--chambray);
+
+        @media screen and (max-width: 320px)
+        {
+            left: initial;
+            top: 0;
+            right: 0;
+        }
     }
 }
 
