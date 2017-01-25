@@ -127,16 +127,16 @@
 
 .select-size
 {
-    width: 450px;
-    height: 50px;
+    width: var(--size-widht-full);
+    height: var(--size-height-full);
     display: flex;
     margin-bottom: 40px;
-    border: 1px solid var(--mercury);
+    border: var(--border) solid var(--mercury);
 
     @media screen and (max-width: 320px)
     {
-        width: 270px;
-        height: 34px;
+        width: var(--size-widht-mob);
+        height: var(--size-height-mob);
         margin-bottom: 50px;
     }
 
@@ -151,7 +151,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: -1px;
+            margin-left: -var(--border);
             box-sizing: initial;
             color: var(--shark);
             font-size: 14px;
@@ -161,19 +161,19 @@
 
         &:not(:last-of-type) .size-box
         {
-            border-right: 1px solid var(--mercury);
+            border-right: var(--border) solid var(--mercury);
         }
 
         input[type=radio]:checked + .size-box
         {
-            height: 46px;
-            margin-top: -1px;
+            height: calc(var(--size-height-full) - 2 * var(--border-focus));
+            margin-top: -var(--border);
             color: var(--chambray);
-            border: 2px solid var(--chambray);
+            border: var(--border-focus) solid var(--chambray);
 
             @media screen and (max-width: 320px)
             {
-                height: 30px;
+                height: calc(var(--size-height-mob) - 2 * var(--border-focus));
             }
         }
     }
