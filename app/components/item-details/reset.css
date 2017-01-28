@@ -3,7 +3,7 @@ button, figure
     all: unset;
 }
 
-input[type=radio]
+.item-details input[type=radio]
 {
     display: none;
 }
