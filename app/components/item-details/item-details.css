@@ -63,7 +63,7 @@
     {
         width: 54px;
         height: 50px;
-        background: url("images/close.svg");
+        background: url("/images/close.svg");
         cursor: pointer;
     }
 }
@@ -217,7 +217,7 @@
 
         input[type=radio]:checked + .color-box
         {
-            background-image: url("images/shape.svg");
+            background-image: url("/images/shape.svg");
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -289,7 +289,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        background: url("images/preview_photo.png");
+        background: url("/images/preview_photo.png");
         background-size: 100%;
         background-position: center center;
         border-bottom: 2px solid var(--chambray);

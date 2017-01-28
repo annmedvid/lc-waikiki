@@ -1,11 +1,11 @@
 @font-face
 {
     font-family: "GothamProMedium";
-    src: url("fonts/GothamProMedium.ttf") format("truetype");
+    src: url("/fonts/GothamProMedium.ttf") format("truetype");
 }
 
 @font-face
 {
     font-family: "SourceSansProRegular";
-    src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
+    src: url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
