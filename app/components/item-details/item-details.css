@@ -125,6 +125,14 @@
     font-size: 12px;
 }
 
+.select-size, .select-color
+{
+    input
+    {
+        display: none;
+    }
+}
+
 .select-size
 {
     width: var(--size-widht-full);

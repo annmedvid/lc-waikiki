@@ -3,11 +3,6 @@ button, figure
     all: unset;
 }
 
-.item-details input[type=radio]
-{
-    display: none;
-}
-
 input[type=submit]
 {
     border: none;
