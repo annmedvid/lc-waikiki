@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Product_card(desktop)" transform="translate(-724.000000, -599.000000)" fill="#FFFFFF">
-            <g id="color" transform="translate(720.000000, 571.914062)">
-                <polygon id="Shape" points="8.45454545 36.4514129 5.11363636 33.1105038 4 34.2241402 8.45454545 38.6786857 18 29.1332311 16.8863636 28.0195948"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M4.455 9.365l-3.34-3.34L0 7.138l4.455 4.455L14 2.047 12.886.934" fill="#FFF" fill-rule="evenodd"/></svg>
