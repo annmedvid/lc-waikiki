@@ -37,15 +37,14 @@
     }
 }
 
-.item-category, .item-name, .item-code, .item-price,
-.item-size, .item-color, .select-size, .select-color,
-.item-description
+.wrapper
 {
-    margin-left: 50px;
+    flex: 1;
+    padding-left: 50px;
 
     @media screen and (max-width: 320px)
     {
-        margin-left: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -64,9 +63,15 @@
 
     .item-category
     {
+        padding-left: 50px;
         align-self: center;
         color: var(--shark);
         font-size: 14px;
+
+        @media screen and (max-width: 320px)
+        {
+            padding-left: 20px;
+        }
     }
 
     .close
