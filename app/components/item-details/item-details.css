@@ -4,6 +4,16 @@
 
 @import "variables.css";
 
+:root
+{
+    --size-widht-full: 450px;
+    --size-widht-mob: 270px;
+    --size-height-full: 50px;
+    --size-height-mob: 34px;
+    --border: 1px;
+    --border-focus: 2px;
+}
+
 .item-details
 {
     width: 1000px;
