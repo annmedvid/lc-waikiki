@@ -22,7 +22,7 @@
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    font-family: var(--gothampromed);
+    font-family: var(--heading-family);
 
     @media screen and (max-width: 320px)
     {
@@ -89,7 +89,7 @@
 .item-code
 {
     color: var(--gray-chateau);
-    font-family: var(--soursesanproreg);
+    font-family: var(--paragraph-family);
     font-size: 14px;
     line-height: 35px;
 }
@@ -131,7 +131,7 @@
 {
     text-decoration: none;
     color: var(--chambray);
-    font-family: var(--soursesanproreg);
+    font-family: var(--paragraph-family);
     font-size: 12px;
 }
 
@@ -238,7 +238,7 @@
 {
     margin-top: 35px;
     color: var(--abbey);
-    font-family: var(--soursesanproreg);
+    font-family: var(--paragraph-family);
     font-size: 14px;
     line-height: 22px;
 
