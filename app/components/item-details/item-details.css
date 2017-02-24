@@ -1,8 +1,6 @@
-@import "reset.css";
-
-@import "fonts.css";
-
-@import "variables.css";
+@import "../shared/fonts.css";
+@import "../shared/reset.css";
+@import "../shared/variables.css";
 
 :root
 {
