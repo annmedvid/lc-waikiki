@@ -2,16 +2,6 @@
 @import "../shared/reset.css";
 @import "../shared/variables.css";
 
-:root
-{
-    --size-width-full: 450px;
-    --size-width-mob: 270px;
-    --size-height-full: 50px;
-    --size-height-mob: 34px;
-    --border: 1px;
-    --border-focus: 2px;
-}
-
 .item-details
 {
     position: absolute;
@@ -39,11 +29,6 @@
     &::backdrop
     {
         background: var(--mercury);
-    }
-
-    *
-    {
-        box-sizing: border-box;
     }
 }
 
@@ -160,55 +145,45 @@
 
 .select-size
 {
-    width: var(--size-width-full);
-    height: var(--size-height-full);
     display: flex;
     margin-bottom: 40px;
-    border: var(--border) solid var(--mercury);
+    color: var(--shark);
+    font-size: 14px;
+    text-transform: uppercase;
 
     @media screen and (max-width: 320px)
     {
-        width: var(--size-width-mob);
-        height: var(--size-height-mob);
         margin-bottom: 50px;
     }
 
-    .size
+    .size:not(:first-of-type)
     {
-        flex: 1;
+        margin-left: -1px;
+    }
+
+    .size-box
+    {
+        width: 76px;
+        height: 50px;
+        border: 1px solid var(--mercury);
+
         display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-sizing: border-box;
 
-        .size-box
+        @media screen and (max-width: 320px)
         {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: -var(--border);
-            box-sizing: initial;
-            color: var(--shark);
-            font-size: 14px;
-            text-transform: uppercase;
-            cursor: pointer;
+            width: 46px;
+            height: 34px;
         }
+    }
 
-        &:not(:last-of-type) .size-box
-        {
-            border-right: var(--border) solid var(--mercury);
-        }
-
-        input[type=radio]:checked + .size-box
-        {
-            height: calc(var(--size-height-full) - 2 * var(--border-focus));
-            margin-top: -var(--border);
-            color: var(--chambray);
-            border: var(--border-focus) solid var(--chambray);
-
-            @media screen and (max-width: 320px)
-            {
-                height: calc(var(--size-height-mob) - 2 * var(--border-focus));
-            }
-        }
+    input[type=radio]:checked + .size-box
+    {
+        border: 2px solid var(--chambray);
+        position: relative;
     }
 }
 
