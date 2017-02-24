@@ -36,6 +36,11 @@
         flex-wrap: nowrap;
     }
 
+    &::backdrop
+    {
+        background: var(--mercury);
+    }
+
     *
     {
         box-sizing: border-box;
@@ -321,9 +326,4 @@
             right: 0;
         }
     }
-}
-
-.item-details::backdrop
-{
-    background: var(--mercury);
 }
