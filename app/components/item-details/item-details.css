@@ -186,38 +186,31 @@ h3
 
 .select-color
 {
-    width: 53px;
-    height: 24px;
     display: flex;
-    justify-content: space-between;
+
+    :nth-of-type(1) .color
+    {
+        background-color: var(--cornflower-lilac);
+    }
+
+    :nth-of-type(2) .color
+    {
+        background-color: var(--swirl);
+    }
 
     .color
     {
+        margin-right: 5px;
         width: 24px;
-        display: flex;
+        height: 24px;
+        cursor: pointer;
+    }
 
-        .color-box
-        {
-            flex: 1;
-            cursor: pointer;
-        }
-
-        &:nth-of-type(1) .color-box
-        {
-            background: var(--cornflower-lilac);
-        }
-
-        &:nth-of-type(2) .color-box
-        {
-            background: var(--swirl);
-        }
-
-        input[type=radio]:checked + .color-box
-        {
-            background-image: url("/images/shape.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+    :checked + .color
+    {
+        background-image: url("/images/shape.svg");
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
