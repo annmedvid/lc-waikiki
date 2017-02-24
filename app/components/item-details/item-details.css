@@ -6,8 +6,8 @@
 
 :root
 {
-    --size-widht-full: 450px;
-    --size-widht-mob: 270px;
+    --size-width-full: 450px;
+    --size-width-mob: 270px;
     --size-height-full: 50px;
     --size-height-mob: 34px;
     --border: 1px;
@@ -150,7 +150,7 @@
 
 .select-size
 {
-    width: var(--size-widht-full);
+    width: var(--size-width-full);
     height: var(--size-height-full);
     display: flex;
     margin-bottom: 40px;
@@ -158,7 +158,7 @@
 
     @media screen and (max-width: 320px)
     {
-        width: var(--size-widht-mob);
+        width: var(--size-width-mob);
         height: var(--size-height-mob);
         margin-bottom: 50px;
     }
