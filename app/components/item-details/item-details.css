@@ -137,7 +137,7 @@ h3
 
 .select-size, .select-color
 {
-    input
+    input[type=radio]
     {
         display: none;
     }
@@ -156,34 +156,31 @@ h3
         margin-bottom: 50px;
     }
 
-    .size:not(:first-of-type)
+    .size
     {
-        margin-left: -1px;
-    }
-
-    .size-box
-    {
+        position: relative;
+        margin-right: -1px;
         width: 76px;
         height: 50px;
-        border: 1px solid var(--mercury);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        box-sizing: border-box;
 
         @media screen and (max-width: 320px)
         {
             width: 46px;
             height: 34px;
         }
+
+        border: 1px solid var(--mercury);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-sizing: border-box;
     }
 
-    input[type=radio]:checked + .size-box
+    :checked + .size
     {
+        z-index: 1;
         border: 2px solid var(--chambray);
-        position: relative;
     }
 }
 
