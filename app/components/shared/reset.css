@@ -1,4 +1,4 @@
-button, figure
+button, figure, dialog
 {
     all: unset;
 }
@@ -18,10 +18,4 @@ input[type=submit]
 body, h1, h2, h3
 {
     margin: 0;
-}
-
-dialog
-{
-    padding: 0;
-    border: 0;
 }
