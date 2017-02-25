@@ -15,7 +15,7 @@ input[type=submit]
     }
 }
 
-body, h1, h2, h3
+body, h1, h2, h3, p
 {
     all: unset;
     display: block;
