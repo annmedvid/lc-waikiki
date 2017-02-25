@@ -1,4 +1,5 @@
 @import "../shared/colors.css";
+@custom-media --mobile (width < 1024px);
 
 .item-details
 {
@@ -8,18 +9,18 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: #fff;
     width: 1000px;
     height: 600px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    background: #fff;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         width: 320px;
-        height: 900px;
+        height: unset;
         flex-wrap: nowrap;
     }
 
@@ -34,7 +35,7 @@
     flex: 1;
     padding-left: 50px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         padding-left: 20px;
     }
@@ -51,7 +52,7 @@
     color: var(--shark);
     font-size: 14px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         padding-left: 20px;
     }
@@ -100,7 +101,7 @@
     font-size: 22px;
     line-height: 21px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         margin-bottom: 40px;
     }
@@ -150,7 +151,7 @@ h3
     font-size: 14px;
     text-transform: uppercase;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         margin-top: 15px;
         margin-bottom: 50px;
@@ -163,7 +164,7 @@ h3
         width: 76px;
         height: 50px;
 
-        @media screen and (max-width: 320px)
+        @media (--mobile)
         {
             width: 46px;
             height: 34px;
@@ -225,7 +226,7 @@ h3
     font-size: 14px;
     line-height: 22px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         width: 270px;
         margin-bottom: 35px;
@@ -243,7 +244,7 @@ h3
     text-transform: uppercase;
     cursor: pointer;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         order: 1;
     }
@@ -255,7 +256,7 @@ h3
     max-height: 600px;
     position: relative;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         margin-left: 20px;
         margin-right: 25px;
@@ -267,7 +268,7 @@ h3
         width: 100%;
         height: 100%;
 
-        @media screen and (max-width: 320px)
+        @media (--mobile)
         {
             width: 196px;
             height: 261px;
@@ -286,7 +287,7 @@ h3
         background-position: center center;
         border-bottom: 2px solid var(--chambray);
 
-        @media screen and (max-width: 320px)
+        @media (--mobile)
         {
             left: initial;
             top: 0;
