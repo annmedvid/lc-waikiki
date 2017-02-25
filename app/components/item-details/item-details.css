@@ -77,6 +77,11 @@
         background-repeat: no-repeat;
         background-color: var(--shark);
         cursor: pointer;
+
+        &:hover
+        {
+            background-color: color(var(--shark) lightness(20%));
+        }
     }
 }
 
