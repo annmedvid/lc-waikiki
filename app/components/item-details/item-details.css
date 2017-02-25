@@ -1,4 +1,4 @@
-@import "../shared/variables.css";
+@import "../shared/colors.css";
 
 .item-details
 {
@@ -126,6 +126,7 @@ h3
     text-decoration: none;
     color: var(--chambray);
     font-size: 12px;
+    cursor: help;
 
     &:hover
     {
