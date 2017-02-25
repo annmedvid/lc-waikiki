@@ -43,28 +43,18 @@
 
 .category
 {
-    width: 550px;
     height: 50px;
     display: flex;
+    padding-left: 50px;
     justify-content: space-between;
     border-bottom: 1px solid var(--mercury);
+    align-items: center;
+    color: var(--shark);
+    font-size: 14px;
 
     @media screen and (max-width: 320px)
     {
-        width: 320px;
-    }
-
-    .item-category
-    {
-        padding-left: 50px;
-        align-self: center;
-        color: var(--shark);
-        font-size: 14px;
-
-        @media screen and (max-width: 320px)
-        {
-            padding-left: 20px;
-        }
+        padding-left: 20px;
     }
 
     .close
@@ -127,11 +117,6 @@ h3
 {
     margin-right: 5px;
     display: inline-block;
-
-    @media screen and (max-width: 320px)
-    {
-        margin-bottom: 25px;
-    }
 }
 
 .size-details
@@ -165,6 +150,7 @@ h3
 
     @media screen and (max-width: 320px)
     {
+        margin-top: 15px;
         margin-bottom: 50px;
     }
 
@@ -244,7 +230,6 @@ h3
 
 .add-bag
 {
-    max-width: 550px;
     height: 57px;
     padding-right: 30px;
     background: var(--chambray);
