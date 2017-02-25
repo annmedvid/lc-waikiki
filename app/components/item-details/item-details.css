@@ -15,7 +15,6 @@
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    font-family: var(--heading-family);
 
     @media screen and (max-width: 320px)
     {
@@ -90,7 +89,6 @@
 .item-code
 {
     color: var(--gray-chateau);
-    font-family: var(--paragraph-family);
     font-size: 14px;
     line-height: 35px;
 }
@@ -127,7 +125,6 @@ h3
 {
     text-decoration: none;
     color: var(--chambray);
-    font-family: var(--paragraph-family);
     font-size: 12px;
 
     &:hover

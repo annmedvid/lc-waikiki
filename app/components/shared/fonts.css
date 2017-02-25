@@ -9,3 +9,19 @@
     font-family: "Source Sans Pro";
     src: url("/fonts/source-sans-pro.ttf") format("truetype");
 }
+
+:root
+{
+    --heading-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+    --paragraph-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3
+{
+    font-family: var(--heading-family);
+}
+
+body
+{
+    font-family: var(--paragraph-family);
+}
