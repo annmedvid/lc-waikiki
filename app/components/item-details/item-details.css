@@ -73,7 +73,11 @@
     {
         width: 54px;
         height: 50px;
-        background: url("/images/close.svg");
+        background-image: svg-load("close.svg", fill: #fff);
+        background-size: 24px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: var(--shark);
         cursor: pointer;
     }
 }
@@ -133,6 +137,11 @@ h3
     color: var(--chambray);
     font-family: var(--paragraph-family);
     font-size: 12px;
+
+    &:hover
+    {
+        text-decoration: underline;
+    }
 }
 
 .select-size, .select-color
@@ -170,11 +179,11 @@ h3
         }
 
         border: 1px solid var(--mercury);
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        box-sizing: border-box;
     }
 
     :checked + .size
@@ -208,7 +217,8 @@ h3
 
     :checked + .color
     {
-        background-image: url("/images/shape.svg");
+        background-image: svg-load("check.svg", fill: #fff);
+        background-size: 14px 12px;
         background-repeat: no-repeat;
         background-position: center;
     }
