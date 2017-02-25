@@ -20,6 +20,8 @@
         "postcss-nested": "^1",
         "postcss-short-spacing": "^1",
         "postcss-custom-properties": "^5",
+        "postcss-custom-media": "^5",
+        "postcss-media-minmax": "^2",
         "postcss-color-function": "^3",
         "postcss-inline-svg": "^2"
     }

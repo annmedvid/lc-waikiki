@@ -1,8 +1,3 @@
-button, figure, dialog
-{
-    all: unset;
-}
-
 input[type=submit]
 {
     border: none;
@@ -15,7 +10,12 @@ input[type=submit]
     }
 }
 
-body, h1, h2, h3, p
+button
+{
+    all: unset;
+}
+
+body, h1, h2, h3, p, dialog, figure
 {
     all: unset;
     display: block;
