@@ -1,4 +1,5 @@
 @import "../shared/colors.css";
+@import "../shared/fonts.css";
 @custom-media --mobile (width < 1024px);
 
 .item-details
