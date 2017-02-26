@@ -205,6 +205,7 @@ h3
         margin-right: 5px;
         width: 24px;
         height: 24px;
+        display: block;
         cursor: pointer;
     }
 
