@@ -99,6 +99,7 @@
     margin: 25px * 55px;
     color: var(--chambray);
     font-size: 22px;
+    font-family: var(--heading-family);
     line-height: 21px;
 
     @media (--mobile)
