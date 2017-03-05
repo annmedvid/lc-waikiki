@@ -1,39 +1,33 @@
-@import "reset.css";
-
-@import "fonts.css";
-
-@import "variables.css";
-
-:root
-{
-    --size-widht-full: 450px;
-    --size-widht-mob: 270px;
-    --size-height-full: 50px;
-    --size-height-mob: 34px;
-    --border: 1px;
-    --border-focus: 2px;
-}
+@import "../shared/colors.css";
+@import "../shared/fonts.css";
+@custom-media --mobile (width < 1024px);
 
 .item-details
 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 1000px;
     height: 600px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    font-family: var(--heading-family);
+    background: #fff;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         width: 320px;
-        height: 900px;
+        height: unset;
         flex-wrap: nowrap;
     }
 
-    *
+    &::backdrop
     {
-        box-sizing: border-box;
+        background: var(--mercury);
     }
 }
 
@@ -42,7 +36,7 @@
     flex: 1;
     padding-left: 50px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         padding-left: 20px;
     }
@@ -50,36 +44,39 @@
 
 .category
 {
-    width: 550px;
     height: 50px;
     display: flex;
+    padding-left: 50px;
     justify-content: space-between;
     border-bottom: 1px solid var(--mercury);
+    align-items: center;
+    color: var(--shark);
+    font-size: 14px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
-        width: 320px;
-    }
-
-    .item-category
-    {
-        padding-left: 50px;
-        align-self: center;
-        color: var(--shark);
-        font-size: 14px;
-
-        @media screen and (max-width: 320px)
-        {
-            padding-left: 20px;
-        }
+        padding-left: 20px;
     }
 
     .close
     {
         width: 54px;
         height: 50px;
-        background: url("/images/close.svg");
         cursor: pointer;
+
+        background:
+        {
+            image: svg-load("close.svg", fill: #fff);
+            position: center;
+            size: 24px;
+            repeat: no-repeat;
+            color: var(--shark);
+        }
+
+        &:hover
+        {
+            background-color: color(var(--shark) lightness(20%));
+        }
     }
 }
 
@@ -94,7 +91,6 @@
 .item-code
 {
     color: var(--gray-chateau);
-    font-family: var(--paragraph-family);
     font-size: 14px;
     line-height: 35px;
 }
@@ -104,15 +100,16 @@
     margin: 25px * 55px;
     color: var(--chambray);
     font-size: 22px;
+    font-family: var(--heading-family);
     line-height: 21px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         margin-bottom: 40px;
     }
 }
 
-.item-size, .item-color
+h3
 {
     margin-bottom: 10px;
     color: var(--shark);
@@ -123,26 +120,26 @@
 
 .item-size
 {
+    margin-right: 5px;
     display: inline-block;
-    padding-right: 5px;
-
-    @media screen and (max-width: 320px)
-    {
-        margin-bottom: 25px;
-    }
 }
 
 .size-details
 {
     text-decoration: none;
     color: var(--chambray);
-    font-family: var(--paragraph-family);
     font-size: 12px;
+    cursor: help;
+
+    &:hover
+    {
+        text-decoration: underline;
+    }
 }
 
 .select-size, .select-color
 {
-    input
+    input[type=radio]
     {
         display: none;
     }
@@ -150,91 +147,77 @@
 
 .select-size
 {
-    width: var(--size-widht-full);
-    height: var(--size-height-full);
     display: flex;
     margin-bottom: 40px;
-    border: var(--border) solid var(--mercury);
+    color: var(--shark);
+    font-size: 14px;
+    text-transform: uppercase;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
-        width: var(--size-widht-mob);
-        height: var(--size-height-mob);
+        margin-top: 15px;
         margin-bottom: 50px;
     }
 
     .size
     {
-        flex: 1;
+        position: relative;
+        margin-right: -1px;
+        width: 76px;
+        height: 50px;
+
+        @media (--mobile)
+        {
+            width: 46px;
+            height: 34px;
+        }
+
+        border: 1px solid var(--mercury);
+        box-sizing: border-box;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 
-        .size-box
-        {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: -var(--border);
-            box-sizing: initial;
-            color: var(--shark);
-            font-size: 14px;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-
-        &:not(:last-of-type) .size-box
-        {
-            border-right: var(--border) solid var(--mercury);
-        }
-
-        input[type=radio]:checked + .size-box
-        {
-            height: calc(var(--size-height-full) - 2 * var(--border-focus));
-            margin-top: -var(--border);
-            color: var(--chambray);
-            border: var(--border-focus) solid var(--chambray);
-
-            @media screen and (max-width: 320px)
-            {
-                height: calc(var(--size-height-mob) - 2 * var(--border-focus));
-            }
-        }
+    :checked + .size
+    {
+        z-index: 1;
+        border: 2px solid var(--chambray);
     }
 }
 
 .select-color
 {
-    width: 53px;
-    height: 24px;
     display: flex;
-    justify-content: space-between;
+
+    :nth-of-type(1) .color
+    {
+        background-color: var(--cornflower-lilac);
+    }
+
+    :nth-of-type(2) .color
+    {
+        background-color: var(--swirl);
+    }
 
     .color
     {
+        margin-right: 5px;
         width: 24px;
-        display: flex;
+        height: 24px;
+        display: block;
+        cursor: pointer;
+    }
 
-        .color-box
+    :checked + .color
+    {
+        background:
         {
-            flex: 1;
-            cursor: pointer;
-        }
-
-        &:nth-of-type(1) .color-box
-        {
-            background: var(--cornflower-lilac);
-        }
-
-        &:nth-of-type(2) .color-box
-        {
-            background: var(--swirl);
-        }
-
-        input[type=radio]:checked + .color-box
-        {
-            background-image: url("/images/shape.svg");
-            background-repeat: no-repeat;
-            background-position: center;
+            image: svg-load("check.svg", fill: #fff);
+            position: center;
+            size: 14px 12px;
+            repeat: no-repeat;
         }
     }
 }
@@ -243,11 +226,10 @@
 {
     margin-top: 35px;
     color: var(--abbey);
-    font-family: var(--paragraph-family);
     font-size: 14px;
     line-height: 22px;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         width: 270px;
         margin-bottom: 35px;
@@ -256,7 +238,6 @@
 
 .add-bag
 {
-    max-width: 550px;
     height: 57px;
     padding-right: 30px;
     background: var(--chambray);
@@ -266,7 +247,7 @@
     text-transform: uppercase;
     cursor: pointer;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         order: 1;
     }
@@ -278,7 +259,7 @@
     max-height: 600px;
     position: relative;
 
-    @media screen and (max-width: 320px)
+    @media (--mobile)
     {
         margin-left: 20px;
         margin-right: 25px;
@@ -290,7 +271,7 @@
         width: 100%;
         height: 100%;
 
-        @media screen and (max-width: 320px)
+        @media (--mobile)
         {
             width: 196px;
             height: 261px;
@@ -309,16 +290,11 @@
         background-position: center center;
         border-bottom: 2px solid var(--chambray);
 
-        @media screen and (max-width: 320px)
+        @media (--mobile)
         {
             left: initial;
             top: 0;
             right: 0;
         }
     }
-}
-
-.item-details::backdrop
-{
-    background: var(--mercury);
 }
