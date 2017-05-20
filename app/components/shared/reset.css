@@ -1,0 +1,22 @@
+input[type=submit]
+{
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus
+    {
+        outline: none;
+    }
+}
+
+button
+{
+    all: unset;
+}
+
+body, h1, h2, h3, p, dialog, figure
+{
+    all: unset;
+    display: block;
+}

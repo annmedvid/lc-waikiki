@@ -13,6 +13,16 @@
     "devDependencies":
     {
         "brunch": "brunch/brunch",
-        "postcss-brunch": "shvaikalesh/postcss-brunch"
+        "postcss-brunch": "shvaikalesh/postcss-brunch",
+        "postcss-import": "^9",
+        "autoprefixer": "^6",
+        "postcss-nested-props": "^1",
+        "postcss-nested": "^1",
+        "postcss-short-spacing": "^1",
+        "postcss-custom-properties": "^5",
+        "postcss-custom-media": "^5",
+        "postcss-media-minmax": "^2",
+        "postcss-color-function": "^3",
+        "postcss-inline-svg": "^2"
     }
 }

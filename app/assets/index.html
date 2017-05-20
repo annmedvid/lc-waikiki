@@ -8,6 +8,45 @@
 <link rel=stylesheet href=style.css>
 
 <dialog class=item-details>
+    <header class=category>
+        <h1>Activewear</h1>
+        <button class=close title="Close dialog"></button>
+    </header>
+
+    <div class=wrapper>
+        <h2 class=item-name>Pink Sweatshirt</h2>
+        <data class=item-code value=6K2882Z4>Product Code: 6K2882Z4 - 51S - D.Ocre</data>
+
+        <p class=item-price>$7,95</p>
+
+        <form method=post id=options>
+            <h3 class=item-size>size</h3>
+            <a href=# class=size-details>Learn more</a>
+            <div class=select-size>
+                <label><input type=radio name=size value=xs><span class=size>xs</span></label>
+                <label><input type=radio name=size value=s><span class=size>s</span></label>
+                <label><input type=radio name=size value=m checked><span class=size>m</span></label>
+                <label><input type=radio name=size value=l><span class=size>l</span></label>
+                <label><input type=radio name=size value=xl><span class=size>xl</span></label>
+                <label><input type=radio name=size value=xxl><span class=size>xxl</span></label>
+            </div>
+
+            <h3 class=item-color>color</h3>
+            <div class=select-color>
+                <label><input type=radio name=color value=D.Ocre checked><span class=color></span></label>
+                <label><input type=radio name=color value=D.Grey><span class=color></span></label>
+            </div>
+
+            <p class=item-description>Main Fabric: %91 Polyester %9 Polyamide. Lining: %100 Polyester<br>Length: Midi</p>
+        </form>
+    </div>
+
+    <input type=submit form=options value="add to bag" class=add-bag>
+
+    <figure class=item-image aria-label="it's image">
+        <img class=image-main src="/images/preview_photo.png" alt="pink sweatshirt full-view">
+        <div class=image-small></div>
+    </figure>
 </dialog>
 
 <script>
